@@ -52,14 +52,18 @@ public class login extends JFrame{
         add(jb2);
                 
         /*ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("C:\\Users\\asus\\Documents\\NetBeansProjects\\Hotel Management System\\src\\hotel\\management\\system\\icons\\login.png"));
-        JLabel jl3 = new JLabel();
+        JLabel jl3 = new JLabel(i1);
         jl3.setBounds(350,10,200,200);
         add(jl3);
-        add(i1);*/
+        add(i1);
+        
+        getContentPane().setBackground(Color.white;
+        
+        */
         
         
         setLayout(null);
-        setBounds(550,350,600,400);
+        setBounds(450,300,600,300);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
         

@@ -2,9 +2,11 @@ package hotel.management.system;
 
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.*;
 
-public class HotelManagementSystem extends JFrame {
+public class HotelManagementSystem extends JFrame implements ActionListener{
 
     HotelManagementSystem() {
 
@@ -27,6 +29,7 @@ public class HotelManagementSystem extends JFrame {
         jb1.setBounds(1100, 560, 120, 30);
         jl.add(jb1);
         
+        jb1.addActionListener(this);
         
         
         setLayout(null);
@@ -46,10 +49,19 @@ public class HotelManagementSystem extends JFrame {
         }
 
     }
+    
+    public void actionPerformed(ActionEvent e){
+        new login().setVisible(true);
+        this.setVisible(false);
+        
+        
+    }
 
     public static void main(String[] args) {
 
         new HotelManagementSystem();
     }
+
+
 
 }
