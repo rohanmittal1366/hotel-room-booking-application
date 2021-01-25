@@ -3,6 +3,7 @@
 package hotel.management.system;
 
 import java.awt.Color;
+import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -51,15 +52,13 @@ public class login extends JFrame{
         jb2.setBounds(180, 150, 120, 30);
         add(jb2);
                 
-        /*ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("C:\\Users\\asus\\Documents\\NetBeansProjects\\Hotel Management System\\src\\hotel\\management\\system\\icons\\login.png"));
-        JLabel jl3 = new JLabel(i1);
-        jl3.setBounds(350,10,200,200);
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("hotel/management/system/icons/login.png"));//C:\\Users\\asus\\Documents\\NetBeansProjects\\Hotel Management System\\src\\
+        Image i2 = i1.getImage().getScaledInstance(200,200,Image.SCALE_DEFAULT);
+        ImageIcon i3 = new ImageIcon(i2);
+        JLabel jl3 = new JLabel(i3);
+        jl3.setBounds(360,2,200,200);
         add(jl3);
-        add(i1);
-        
-        getContentPane().setBackground(Color.white;
-        
-        */
+        getContentPane().setBackground(Color.white);
         
         
         setLayout(null);
@@ -72,9 +71,5 @@ public class login extends JFrame{
         {
             new login();
         }
-
-    private void add(ImageIcon i1) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
+        
 }
