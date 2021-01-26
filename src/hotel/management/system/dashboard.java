@@ -53,7 +53,7 @@ public class dashboard extends JFrame {
         
         
         JLabel jl2 = new JLabel("The Taj group welcome you");
-        jl2.setBounds(600,60,1000,50);
+        jl2.setBounds(500,80,1000,50);
         jl2.setForeground(Color.white);
         jl2.setFont(new Font("Tahoma", Font.PLAIN, 46) );
         jl3.add(jl2);
