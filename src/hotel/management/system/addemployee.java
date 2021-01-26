@@ -13,7 +13,7 @@ import javax.swing.JLabel;
 import javax.swing.*;
 import javax.swing.text.MaskFormatter;
 
-public class addemployee extends JFrame implements ActionListener{
+public class addemployee extends JFrame implements ActionListener {
 
     JTextField jtf1, jtf3, jtf5, jtf6;
     JFormattedTextField jtf2, jtf4;
@@ -129,59 +129,57 @@ public class addemployee extends JFrame implements ActionListener{
         JLabel jl3 = new JLabel(i3);
         jl3.setBounds(380, 75, 450, 450);
         add(jl3);
-        
+
         JLabel j2 = new JLabel("ADD EMPLOYEE DETAILS");
         j2.setFont(new Font("Tahoma", Font.PLAIN, 30));
         j2.setForeground(Color.blue);
-        j2.setBounds(420,30,400,30);
+        j2.setBounds(420, 30, 400, 30);
         add(j2);
-        
-        
+
         jb1 = new JButton("SUBMIT");
         jb1.setBackground(Color.black);
         jb1.setForeground(Color.white);
-        jb1.setBounds(200,430,150,30);
+        jb1.setBounds(200, 430, 150, 30);
         jb1.addActionListener(this);
         add(jb1);
-        
+
         getContentPane().setBackground(Color.white);
         setLayout(null);
         setBounds(370, 200, 850, 550);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        //setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
     }
 
-    public void actionPerformed(ActionEvent A)
-    {
-        String name =   jtf1.getText();
-        String age =    jtf2.getText();
+    public void actionPerformed(ActionEvent A) {
+        String name = jtf1.getText();
+        String age = jtf2.getText();
         String salary = jtf3.getText();
-        String phone =  jtf4.getText();
-        String adhar =  jtf5.getText();
-        String email =  jtf6.getText();
+        String phone = jtf4.getText();
+        String adhar = jtf5.getText();
+        String email = jtf6.getText();
         String gender = null;
-        
-        if(r1.isSelected())
+
+        if (r1.isSelected()) {
             gender = "Male";
-        else if(r2.isSelected())
+        } else if (r2.isSelected()) {
             gender = "Female";
-        
-        String job = (String)cb.getSelectedItem();
-     
+        }
+
+        String job = (String) cb.getSelectedItem();
+
         conn c = new conn();
-        String str = "insert into employee value('"+name+"','"+age+"','"+gender+"','"+job+"','"+salary+"','"+phone+"','"+adhar+"','"+email+"');";
-        
-        try{
+        String str = "insert into employee value('" + name + "','" + age + "','" + gender + "','" + job + "','" + salary + "','" + phone + "','" + adhar + "','" + email + "');";
+
+        try {
             c.s.executeUpdate(str);
-            JOptionPane.showMessageDialog(null,"New Employee Added");
+            JOptionPane.showMessageDialog(null, "New Employee Added");
             this.setVisible(false);
-            
-        }catch(Exception e){
+
+        } catch (Exception e) {
             System.out.println(e);
         }
     }
-    
-    
+
     public static void main(String args[]) {
         new addemployee().setVisible(true);
     }

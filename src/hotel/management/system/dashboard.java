@@ -8,9 +8,11 @@ package hotel.management.system;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.*;
 
-public class dashboard extends JFrame {
+public class dashboard extends JFrame implements ActionListener{
 
     JMenuBar jmb;
     JMenu jm1, jm2;
@@ -30,15 +32,19 @@ public class dashboard extends JFrame {
         jmb.add(jm2);
 
         jmi1 = new JMenuItem("RECEPTION");
+        jmi1.addActionListener(this);
         jm1.add(jmi1);
 
         jmi2 = new JMenuItem("ADD EMPLOYEE");
+        jmi2.addActionListener(this);
         jm2.add(jmi2);
 
         jmi3 = new JMenuItem("ADD ROOMS");
+        jmi3.addActionListener(this);
         jm2.add(jmi3);
 
         jmi4 = new JMenuItem("ADD DRIVERS");
+        jmi4.addActionListener(this);
         jm2.add(jmi4);
 
         jmb.setBounds(0, 0, 1950, 30);
@@ -73,5 +79,17 @@ public class dashboard extends JFrame {
 
     private void add(ImageIcon i1) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    public void actionPerformed(ActionEvent a){
+        
+        if(a.getActionCommand().equals("ADD EMPLOYEE"))
+        {
+            new addemployee().setVisible(true);
+        }
+        else if(a.getActionCommand().equals("ADD ROOMS"))
+        {
+            new addroooms().setVisible(true);
+        }
     }
 }
