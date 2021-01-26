@@ -167,7 +167,18 @@ public class addemployee extends JFrame implements ActionListener{
             gender = "Female";
         
         String job = (String)cb.getSelectedItem();
-      
+     
+        conn c = new conn();
+        String str = "insert into employee value('"+name+"','"+age+"','"+gender+"','"+job+"','"+salary+"','"+phone+"','"+adhar+"','"+email+"');";
+        
+        try{
+            c.s.executeUpdate(str);
+            JOptionPane.showMessageDialog(null,"New Employee Added");
+            this.setVisible(false);
+            
+        }catch(Exception e){
+            System.out.println(e);
+        }
     }
     
     
