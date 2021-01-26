@@ -6,14 +6,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
 
-public class HotelManagementSystem extends JFrame implements ActionListener{
+public class HotelManagementSystem extends JFrame implements ActionListener {
 
     HotelManagementSystem() {
 
         setBounds(100, 100, 1300, 665);
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("hotel/management/system/icons/download.jpg"));
         JLabel jl = new JLabel(i1);
-
         jl.setBounds(0, 0, 1300, 665);
         add(jl);
 
@@ -28,10 +27,9 @@ public class HotelManagementSystem extends JFrame implements ActionListener{
         jb1.setForeground(Color.black);
         jb1.setBounds(1100, 560, 120, 30);
         jl.add(jb1);
-        
+
         jb1.addActionListener(this);
-        
-        
+
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
@@ -49,19 +47,16 @@ public class HotelManagementSystem extends JFrame implements ActionListener{
         }
 
     }
-    
-    public void actionPerformed(ActionEvent e){
+
+    public void actionPerformed(ActionEvent e) {
         new login().setVisible(true);
         this.setVisible(false);
-        
-        
+
     }
 
     public static void main(String[] args) {
 
         new HotelManagementSystem();
     }
-
-
 
 }
