@@ -43,7 +43,7 @@ public class dashboard extends JFrame {
 
         jmb.setBounds(0, 0, 1950, 30);
 
-        /*
+        
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("hotel/management/system/icons/third.jpg"));//C:\\Users\\asus\\Documents\\NetBeansProjects\\Hotel Management System\\src\\
         Image i2 = i1.getImage().getScaledInstance(1950, 1000, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
@@ -57,7 +57,7 @@ public class dashboard extends JFrame {
         jl2.setForeground(Color.white);
         jl2.setFont(new Font("Tahoma", Font.PLAIN, 46) );
         jl3.add(jl2);
-        */
+        
         
         
         setLayout(null);
