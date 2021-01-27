@@ -29,7 +29,7 @@ public class addroooms extends JFrame implements ActionListener {
         jtf1.setBounds(250, 80, 150, 30);
         add(jtf1);
 
-        JLabel aval = new JLabel("AVAILABEL");
+        JLabel aval = new JLabel("AVAILABLE");
         aval.setFont(new Font("Tahoma", Font.PLAIN, 16));
         aval.setBounds(60, 130, 120, 30);
         add(aval);
@@ -117,7 +117,7 @@ public class addroooms extends JFrame implements ActionListener {
                 c.s.executeUpdate(str);
                 JOptionPane.showMessageDialog(null, "New Room Added");
                 this.setVisible(false);
-                
+
             } catch (Exception e) {
                 System.out.println(e);
             }
