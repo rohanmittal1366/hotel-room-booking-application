@@ -68,7 +68,7 @@ public class dashboard extends JFrame implements ActionListener{
         
         setLayout(null);
         setBounds(0, 0, 1950, 1000);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        //setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
     }
 
