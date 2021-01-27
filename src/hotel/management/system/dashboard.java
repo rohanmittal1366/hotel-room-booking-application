@@ -95,6 +95,9 @@ public class dashboard extends JFrame implements ActionListener{
         {
             new adddriver().setVisible(true);
         }
-        
+        else if(a.getActionCommand().equals("RECEPTION"))
+        {
+            new reception().setVisible(true);
+        }
     }
 }
