@@ -121,8 +121,8 @@ public class reception extends JFrame implements ActionListener {
             new addcustomer().setVisible(true);
             this.setVisible(false);
 
-            
         } else if (a.getSource() == b2) {
+            
             new roominfo().setVisible(true);
             this.setVisible(false);
 
@@ -135,6 +135,9 @@ public class reception extends JFrame implements ActionListener {
 
         } else if (a.getSource() == b5) {
 
+            new customerinfo().setVisible(true);
+            this.setVisible(false);
+            
         } else if (a.getSource() == b6) {
 
             new managerinfo().setVisible(true);
@@ -146,6 +149,9 @@ public class reception extends JFrame implements ActionListener {
 
         } else if (a.getSource() == b9) {
 
+             new updateroom().setVisible(true);
+            this.setVisible(false);
+            
         } else if (a.getSource() == b10) {
 
         } else if (a.getSource() == b11) {

@@ -151,7 +151,7 @@ public class addcustomer extends JFrame implements ActionListener {
         JLabel jl3 = new JLabel(i3);
         jl3.setBounds(450, 40, 500, 350);
         add(jl3);
-         
+
         getContentPane().setBackground(Color.white);
         setBounds(350, 200, 1000, 550);
         setLayout(null);
@@ -182,7 +182,7 @@ public class addcustomer extends JFrame implements ActionListener {
             String status = j4.getText();
             String deposit = j5.getText();
             String str = "insert into customer values('" + id + "','" + number + "','" + name + "','" + gender + "','" + country + "','" + room + "','" + status + "','" + deposit + "')";
-            String str1 = "update room set avaliable = 'Occupied' where rnum ='"+room+"'";
+            String str1 = "update room set avaliable = 'Occupied' where rnum ='" + room + "'";
             try {
                 conn c = new conn();
                 c.s.executeUpdate(str);
@@ -202,4 +202,3 @@ public class addcustomer extends JFrame implements ActionListener {
     }
 
 }
-
