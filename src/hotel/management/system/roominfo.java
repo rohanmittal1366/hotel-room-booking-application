@@ -74,7 +74,7 @@ public class roominfo extends JFrame implements ActionListener {
         getContentPane().setBackground(Color.white);
         setBounds(250, 150, 1050, 550);
         setLayout(null);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        //setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
 
     }

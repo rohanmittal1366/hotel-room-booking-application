@@ -118,6 +118,10 @@ public class reception extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent a) {
         if (a.getSource() == b1) {
 
+            new addcustomer().setVisible(true);
+            this.setVisible(false);
+
+            
         } else if (a.getSource() == b2) {
             new roominfo().setVisible(true);
             this.setVisible(false);
