@@ -6,8 +6,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 import javax.swing.*;
-import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
-import net.proteanit.sql.DbUtils;
 
 public class updatecheck extends JFrame implements ActionListener {
 
@@ -145,7 +143,7 @@ public class updatecheck extends JFrame implements ActionListener {
             conn c = new conn();
             String room = null;
             String deposit = null;
-             int amt_paid = 0;
+            int amt_paid = 0;
             String price = null;
             try {
                 ResultSet rs = c.s.executeQuery(str);
@@ -158,14 +156,13 @@ public class updatecheck extends JFrame implements ActionListener {
                     room = rs.getString("room");
                     deposit = rs.getString("deposit");
                 }
-                
-                ResultSet rs1 = c.s.executeQuery("select * from room where rnum = '"+room+"'");
-                while(rs1.next())
-                {
+
+                ResultSet rs1 = c.s.executeQuery("select * from room where rnum = '" + room + "'");
+                while (rs1.next()) {
                     price = rs1.getString("price");
-                    amt_paid = Integer.parseInt(price)- Integer.parseInt(deposit);
+                    amt_paid = Integer.parseInt(price) - Integer.parseInt(deposit);
                     j6.setText(Integer.toString(amt_paid));
-                    
+
                 }
             } catch (Exception e) {
                 System.out.println(e);

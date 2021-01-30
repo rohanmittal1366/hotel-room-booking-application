@@ -51,10 +51,10 @@ public class dashboard extends JFrame implements ActionListener{
 
         
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("hotel/management/system/icons/third.jpg"));//C:\\Users\\asus\\Documents\\NetBeansProjects\\Hotel Management System\\src\\
-        Image i2 = i1.getImage().getScaledInstance(1950, 1000, Image.SCALE_DEFAULT);
+        Image i2 = i1.getImage().getScaledInstance(1950, 800, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
         JLabel jl3 = new JLabel(i3);
-        jl3.setBounds(0, 0, 1950, 1000);
+        jl3.setBounds(0, 0, 1950, 800);
         add(jl3);
         
         

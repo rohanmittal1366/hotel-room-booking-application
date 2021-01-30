@@ -18,6 +18,7 @@ public class roominfo extends JFrame implements ActionListener {
 
         t1 = new JTable();
         t1.setBounds(0, 40, 500, 350);
+        t1.setBackground(Color.white);
         add(t1);
 
         JLabel jl2 = new JLabel("Room no");

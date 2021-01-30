@@ -55,7 +55,7 @@ public class customerinfo extends JFrame implements ActionListener {
         jl7.setFont(new Font("Tahoma", Font.PLAIN, 14));
         add(jl7);
 
-        JLabel jl8 = new JLabel("Status");
+        JLabel jl8 = new JLabel("Checked in");
         jl8.setBounds(760, 10, 100, 20);
         jl8.setForeground(Color.black);
         jl8.setFont(new Font("Tahoma", Font.PLAIN, 14));

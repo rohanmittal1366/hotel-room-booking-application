@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
 import java.sql.*;
-import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
+
 
 import net.proteanit.sql.*;
 
