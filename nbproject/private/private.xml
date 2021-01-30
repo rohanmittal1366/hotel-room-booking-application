@@ -14,11 +14,16 @@
         <group>
             <file>file:/C:/Users/asus/Documents/NetBeansProjects/Hotel%20Management%20System/src/hotel/management/system/dashboard.java</file>
             <file>file:/C:/Users/asus/Documents/NetBeansProjects/Hotel%20Management%20System/src/hotel/management/system/reception.java</file>
+            <file>file:/C:/Users/asus/Documents/NetBeansProjects/Hotel%20Management%20System/src/hotel/management/system/updatecheck.java</file>
             <file>file:/C:/Users/asus/Documents/NetBeansProjects/Hotel%20Management%20System/src/hotel/management/system/managerinfo.java</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/Hotel%20Management%20System/src/hotel/management/system/addroooms.java</file>
+            <file>file:/C:/Users/asus/Documents/NetBeansProjects/Hotel%20Management%20System/src/hotel/management/system/addcustomer.java</file>
+            <file>file:/C:/Users/asus/Documents/NetBeansProjects/Hotel%20Management%20System/src/hotel/management/system/customerinfo.java</file>
+            <file>file:/C:/Users/asus/Documents/NetBeansProjects/Hotel%20Management%20System/src/hotel/management/system/updateroom.java</file>
             <file>file:/C:/Users/asus/Documents/NetBeansProjects/Hotel%20Management%20System/src/hotel/management/system/roominfo.java</file>
+            <file>file:/C:/Users/asus/Documents/NetBeansProjects/Hotel%20Management%20System/src/hotel/management/system/addroooms.java</file>
             <file>file:/C:/Users/asus/Documents/NetBeansProjects/Hotel%20Management%20System/src/hotel/management/system/conn.java</file>
             <file>file:/C:/Users/asus/Documents/NetBeansProjects/Hotel%20Management%20System/src/hotel/management/system/employeeinfo.java</file>
+            <file>file:/C:/Users/asus/Documents/NetBeansProjects/Hotel%20Management%20System/src/hotel/management/system/checkout.java</file>
         </group>
     </open-files>
 </project-private>

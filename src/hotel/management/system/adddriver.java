@@ -13,7 +13,7 @@ import javax.swing.text.MaskFormatter;
 
 public class adddriver extends JFrame implements ActionListener {
 
-    JTextField jtf1, jtf3, jtf4;
+    JTextField jtf1, jtf3, jtf4,jtf5;
     JFormattedTextField jtf2;
     JRadioButton r1, r2;
     JComboBox cb, c1, cb1;
@@ -106,9 +106,9 @@ public class adddriver extends JFrame implements ActionListener {
         loc.setBounds(60, 330, 120, 30);
         add(loc);
 
-        jtf3 = new JTextField();
-        jtf3.setBounds(200, 330, 150, 30);
-        add(jtf3);
+        jtf5 = new JTextField();
+        jtf5.setBounds(200, 330, 150, 30);
+        add(jtf5);
 
         b1 = new JButton("Add Driver");
         b1.setBackground(Color.black);
@@ -159,7 +159,7 @@ public class adddriver extends JFrame implements ActionListener {
             String carcom = jtf3.getText();
             String carmodel = jtf4.getText();
             String aval = (String) c1.getSelectedItem();
-            String location = jtf2.getText();
+            String location = jtf5.getText();
 
             conn c = new conn();
             try {

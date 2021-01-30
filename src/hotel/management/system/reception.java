@@ -12,7 +12,7 @@ public class reception extends JFrame implements ActionListener {
 
     reception() {
 
-        b1 = new JButton("New Coustomer Form");
+        b1 = new JButton("New Customer Form");
         b1.setBackground(Color.black);
         b1.setForeground(Color.white);
         b1.setBounds(10, 30, 200, 30);
@@ -128,6 +128,9 @@ public class reception extends JFrame implements ActionListener {
 
         } else if (a.getSource() == b3) {
 
+             new department().setVisible(true);
+            this.setVisible(false);
+            
         } else if (a.getSource() == b4) {
 
             new employeeinfo().setVisible(true);
@@ -158,8 +161,14 @@ public class reception extends JFrame implements ActionListener {
             
         } else if (a.getSource() == b10) {
 
+             new pickup().setVisible(true);
+            this.setVisible(false);
+
         } else if (a.getSource() == b11) {
 
+            new searchroom().setVisible(true);
+            this.setVisible(false);
+            
         } else if (a.getSource() == b12) {
             new login().setVisible(true);
             this.setVisible(false);
