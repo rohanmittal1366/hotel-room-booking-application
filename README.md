@@ -10,8 +10,7 @@ A java application in which a user can book hotel's room
 6. update room status
 7. Pickup service
 8. Login / logout as a user
-9. Seach room
-10. 
+9. Search room
 
 ## Database
 In this i use mysql for database queries and phpmyadmin to manipulate it.
