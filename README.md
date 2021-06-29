@@ -13,4 +13,4 @@ A java application in which a user can book hotel's room
 9. Search room
 
 ## Database
-In this i use mysql for database queries and phpmyadmin to manipulate it.
+In this we've used mysql database using phpmyadmin as a tool to handle data efficiently.
