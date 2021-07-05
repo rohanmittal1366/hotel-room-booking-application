@@ -1,5 +1,5 @@
 # Hotel Management System
-A java application in which a user can book hotel's room 
+Built a (Desktop + web) application with java using servlet, JSP and swing components and connect them with common database 
 ## It contains functionality like : 
 
 1. Add driver
